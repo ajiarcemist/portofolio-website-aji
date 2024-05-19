@@ -32,7 +32,6 @@
         dan aku merupakan Fullstack Developer yang berfokus di web development.
       </p>
       <div
-        @click="scrollTo('Contact')"
         class="text-center my-8 grid md:grid-cols-3 lg:grid-cols-4 grid-cols-2 gap-4"
       >
         <div
@@ -41,9 +40,28 @@
           <span>Download CV</span>
         </div>
         <div
+          @click="scrollTo('Contact')"
           class="px-6 py-3 w-full rounded-xl border border-gray-400 hover:bg-gradient-to-br from-orange-500 to-pink-500 text-white hover:border-none cursor-pointer"
         >
           <span>Contact</span>
+        </div>
+        <div
+          class="text-white col-span-2 md:col-span-1 flex justify-center items-center gap-5 mt-6 md:mt-0 lg:mt-0 pl-5"
+        >
+          <a href="https://www.linkedin.com/in/ajiesur/" target="_blank">
+            <img
+              class="w-[70px]"
+              src="/src/assets/img/linkedin.png"
+              alt="linkedin"
+            />
+          </a>
+          <a href="https://github.com/ajiarcemist" target="_blank">
+            <img
+              class="w-[120px]"
+              src="/src/assets/img/github.png"
+              alt="linkedin"
+            />
+          </a>
         </div>
       </div>
     </div>
@@ -76,10 +94,10 @@ export default {
 
           if (charIndex === 0) {
             isDeleting = false;
-            wordIndex = (wordIndex + 1) % words.length; // Update wordIndex
-            setTimeout(type, 1250); // Adjust the delay (in milliseconds) as needed
+            wordIndex = (wordIndex + 1) % words.length;
+            setTimeout(type, 1250);
           } else {
-            setTimeout(type, 50); // Speed of deleting
+            setTimeout(type, 50);
           }
         } else {
           typingElement.textContent = currentWord.substring(0, charIndex + 1);
@@ -87,9 +105,9 @@ export default {
 
           if (charIndex === currentWord.length) {
             isDeleting = true;
-            setTimeout(type, 1250); // Adjust the delay (in milliseconds) as needed
+            setTimeout(type, 1250);
           } else {
-            setTimeout(type, 70); // Speed of typing
+            setTimeout(type, 70);
           }
         }
       }
@@ -105,6 +123,5 @@ export default {
 
 <style scoped>
 .typing-effect {
-  /* Add any additional styles for the typing effect */
 }
 </style>
