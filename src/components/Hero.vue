@@ -32,6 +32,7 @@
         dan aku merupakan Fullstack Developer yang berfokus di web development.
       </p>
       <div
+        @click="scrollTo('Contact')"
         class="text-center my-8 grid md:grid-cols-3 lg:grid-cols-4 grid-cols-2 gap-4"
       >
         <div
@@ -52,10 +53,13 @@
 
 <script>
 export default {
-  mounted() {
-    this.typeEffect();
-  },
   methods: {
+    scrollTo(sectionId) {
+      const section = document.getElementById(sectionId);
+      if (section) {
+        section.scrollIntoView({ behavior: "smooth" });
+      }
+    },
     typeEffect() {
       const words = ["Fullstack Engineer", "Web Developer"];
       let wordIndex = 0;
@@ -92,6 +96,9 @@ export default {
 
       type();
     },
+  },
+  mounted() {
+    this.typeEffect();
   },
 };
 </script>
