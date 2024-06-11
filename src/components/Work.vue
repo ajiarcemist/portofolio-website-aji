@@ -10,6 +10,37 @@
       <div
         class="transform transition-transform duration-300 duration-300 hover:scale-105 overflow-hidden shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center h-[200px] bg-cover relative"
       >
+        <img src="/src/assets/img/yukdonasi.png" alt="yukdonasi" />
+        <div
+          class="opacity-0 group-hover:opacity-90 bg-[gray]/70 absolute inset-0 flex flex-col justify-center items-center"
+        >
+          <span class="text-2xl font-bold text-white tracking-wider"
+            >Yuk Donasi App</span
+          >
+          <div class="pt-8 text-center">
+            <a href="https://fe.yukdonasi.my.id/" target="_blank">
+              <button
+                class="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg"
+              >
+                Live
+              </button>
+            </a>
+            <a
+              href="https://github.com/ajiarcemist/web-yuk-donasi"
+              target="_blank"
+            >
+              <button
+                class="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg"
+              >
+                Code
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div
+        class="transform transition-transform duration-300 duration-300 hover:scale-105 overflow-hidden shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center h-[200px] bg-cover relative"
+      >
         <img src="/src/assets/img/todolist.png" alt="todolist" />
         <div
           class="opacity-0 group-hover:opacity-90 bg-[gray]/70 absolute inset-0 flex flex-col justify-center items-center"
